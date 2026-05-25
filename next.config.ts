@@ -1,13 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Vercel automatically sets this, but it's good to be explicit
-  swcMinify: true,
-
-  turbopack: {
-    root: process.cwd(),
-  },
-
   // Enable static generation for better performance on Vercel
   staticPageGenerationTimeout: 60,
 
