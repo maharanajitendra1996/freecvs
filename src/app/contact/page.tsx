@@ -1,6 +1,17 @@
+import type { Metadata } from "next";
 import { SiteShell } from "@/components/layout/site-shell";
 
-export const metadata = { title: "Contact" };
+export const metadata: Metadata = {
+  title: "Contact ResumeForge | Get Help with Your Resume",
+  description:
+    "Get in touch with ResumeForge support. Have questions about our free resume builder? Contact us anytime.",
+  keywords: ["contact", "support", "help", "resume builder help"],
+  openGraph: {
+    title: "Contact ResumeForge",
+    description: "Reach out to the ResumeForge team. We're here to help!",
+    type: "website",
+  },
+};
 
 export default function ContactPage() {
   return (
@@ -11,11 +22,16 @@ export default function ContactPage() {
           For support or privacy requests, email us at:
         </p>
         <p className="mt-4">
-          <a href="mailto:support@resumeforge.app" className="font-medium text-indigo-600 hover:underline">
-            support@resumeforge.app
+          <a
+            href="mailto:hackerboy4658@gmail.com"
+            className="font-medium text-indigo-600 hover:underline"
+          >
+            hackerboy4658@gmail.com
           </a>
         </p>
-        <p className="mt-6 text-sm text-zinc-500">We typically respond within 2 business days.</p>
+        <p className="mt-6 text-sm text-zinc-500">
+          We typically respond within 2 business days.
+        </p>
       </div>
     </SiteShell>
   );
