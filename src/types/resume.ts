@@ -42,6 +42,8 @@ export interface ResumeData {
   skills: SkillGroup[];
   languages: string;
   certifications: string;
+  photo?: string;
+  showPhoto?: boolean;
 }
 
 export const emptyResumeData = (): ResumeData => ({
@@ -59,6 +61,8 @@ export const emptyResumeData = (): ResumeData => ({
   skills: [],
   languages: "",
   certifications: "",
+  photo: undefined,
+  showPhoto: false,
 });
 
 export const sampleResumeData = (): ResumeData => ({
@@ -113,4 +117,6 @@ export const sampleResumeData = (): ResumeData => ({
   ],
   languages: "English (Native), Spanish (Professional)",
   certifications: "AWS Solutions Architect · Google Cloud Professional",
+  photo: undefined,
+  showPhoto: false,
 });

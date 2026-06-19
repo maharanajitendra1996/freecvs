@@ -88,6 +88,42 @@ function ContactBlock({ data, theme }: { data: ResumeData; theme: ResumeTemplate
   );
 }
 
+function ContactBlockWithPhoto({ data, theme }: { data: ResumeData; theme: ResumeTemplate["theme"] }) {
+  const { contact } = data;
+  const lines = [
+    contact.email,
+    contact.phone,
+    contact.location,
+    contact.website,
+    contact.linkedin,
+  ].filter(Boolean);
+
+  return (
+    <div className="flex items-start gap-4">
+      {data.showPhoto && data.photo && (
+        <img
+          src={data.photo}
+          alt={contact.fullName}
+          className="h-32 w-32 rounded-lg object-cover shadow-md"
+        />
+      )}
+      <div className="flex-1">
+        <h1
+          className="text-2xl font-bold leading-tight"
+          style={{ fontFamily: theme.headingFont, color: theme.primary }}
+        >
+          {contact.fullName || "Your Name"}
+        </h1>
+        {lines.length > 0 && (
+          <p className="mt-2 text-xs leading-relaxed" style={{ color: theme.muted }}>
+            {lines.join(" · ")}
+          </p>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function MainContent({ data, theme }: { data: ResumeData; theme: ResumeTemplate["theme"] }) {
   return (
     <div className="space-y-4 text-sm" style={{ fontFamily: theme.bodyFont, color: theme.text }}>
@@ -193,7 +229,11 @@ export function ResumePreview({ data, template, scale = 1, id = "resume-preview"
         style={baseStyle}
       >
         <div className="px-8 py-6 text-white" style={{ backgroundColor: theme.primary }}>
-          <ContactBlock data={data} theme={{ ...theme, primary: "#ffffff", muted: "#e2e8f0" }} />
+          {template.supportsPhoto && data.showPhoto && data.photo ? (
+            <ContactBlockWithPhoto data={data} theme={{ ...theme, primary: "#ffffff", muted: "#e2e8f0" }} />
+          ) : (
+            <ContactBlock data={data} theme={{ ...theme, primary: "#ffffff", muted: "#e2e8f0" }} />
+          )}
         </div>
         <div className="grid grid-cols-3 gap-6 px-8 py-6">
           <div className="col-span-2">
@@ -211,7 +251,23 @@ export function ResumePreview({ data, template, scale = 1, id = "resume-preview"
     return (
       <div id={id} className="mx-auto flex w-full max-w-[210mm] min-h-[297mm] shadow-lg" style={baseStyle}>
         <div className="w-[32%] shrink-0 px-5 py-6 text-white" style={{ backgroundColor: theme.primary }}>
-          <ContactBlock data={data} theme={{ ...theme, primary: "#fff", secondary: "#e2e8f0", muted: "#cbd5e1" }} />
+          {template.supportsPhoto && data.showPhoto && data.photo ? (
+            <div>
+              <img
+                src={data.photo}
+                alt={data.contact.fullName}
+                className="mb-4 h-28 w-28 rounded-lg object-cover shadow-md"
+              />
+              <h1
+                className="text-lg font-bold leading-tight"
+                style={{ fontFamily: theme.headingFont, color: "#fff" }}
+              >
+                {data.contact.fullName || "Your Name"}
+              </h1>
+            </div>
+          ) : (
+            <ContactBlock data={data} theme={{ ...theme, primary: "#fff", secondary: "#e2e8f0", muted: "#cbd5e1" }} />
+          )}
           <div className="mt-6">
             <SidebarContent data={data} theme={{ ...theme, primary: "#fff", text: "#f1f5f9", muted: "#cbd5e1" }} />
           </div>
@@ -227,7 +283,11 @@ export function ResumePreview({ data, template, scale = 1, id = "resume-preview"
     return (
       <div id={id} className="mx-auto flex w-full max-w-[210mm] min-h-[297mm] shadow-lg" style={baseStyle}>
         <div className="flex-1 px-6 py-6">
-          <ContactBlock data={data} theme={theme} />
+          {template.supportsPhoto && data.showPhoto && data.photo ? (
+            <ContactBlockWithPhoto data={data} theme={theme} />
+          ) : (
+            <ContactBlock data={data} theme={theme} />
+          )}
           <div className="mt-4">
             <MainContent data={data} theme={theme} />
           </div>
@@ -260,7 +320,11 @@ export function ResumePreview({ data, template, scale = 1, id = "resume-preview"
 
   return (
     <div id={id} className="mx-auto w-full max-w-[210mm] min-h-[297mm] px-8 py-8 shadow-lg" style={baseStyle}>
-      <ContactBlock data={data} theme={theme} />
+      {template.supportsPhoto && data.showPhoto && data.photo ? (
+        <ContactBlockWithPhoto data={data} theme={theme} />
+      ) : (
+        <ContactBlock data={data} theme={theme} />
+      )}
       <div className="mt-6 space-y-4">
         <MainContent data={data} theme={theme} />
         {(data.skills.length > 0 || data.languages) && (

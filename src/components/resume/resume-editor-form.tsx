@@ -1,6 +1,6 @@
 "use client";
 
-import { Plus, Trash2 } from "lucide-react";
+import { Plus, Trash2, Upload, X } from "lucide-react";
 import type { ResumeData, ExperienceItem, EducationItem, SkillGroup } from "@/types/resume";
 import { useResumeStore } from "@/store/resume-store";
 
@@ -22,6 +22,22 @@ export function ResumeEditorForm({ data, onChange }: ResumeEditorFormProps) {
 
   const inputClass =
     "w-full rounded-lg border border-zinc-200 px-3 py-2 text-sm focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500";
+
+  const handlePhotoUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        const base64 = event.target?.result as string;
+        update({ photo: base64, showPhoto: true });
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
+  const removePhoto = () => {
+    update({ photo: undefined, showPhoto: false });
+  };
 
   return (
     <div className="space-y-6 text-sm">
@@ -48,6 +64,50 @@ export function ResumeEditorForm({ data, onChange }: ResumeEditorFormProps) {
             </div>
           ))}
         </div>
+      </section>
+
+      <section>
+        <h3 className="mb-3 font-semibold text-zinc-900">Photo (Optional)</h3>
+        {data.photo ? (
+          <div className="flex items-end gap-3">
+            <div className="flex-1">
+              <img
+                src={data.photo}
+                alt="Profile"
+                className="h-32 w-32 rounded-lg border border-zinc-200 object-cover"
+              />
+            </div>
+            <div className="space-y-2">
+              <label className="flex items-center gap-2">
+                <input
+                  type="checkbox"
+                  checked={data.showPhoto}
+                  onChange={(e) => update({ showPhoto: e.target.checked })}
+                  className="rounded border-zinc-300"
+                />
+                <span className="text-xs text-zinc-600">Show in resume</span>
+              </label>
+              <button
+                type="button"
+                onClick={removePhoto}
+                className="flex items-center gap-1 text-xs font-medium text-red-600 hover:text-red-700"
+              >
+                <Trash2 className="h-3.5 w-3.5" /> Remove
+              </button>
+            </div>
+          </div>
+        ) : (
+          <label className="flex cursor-pointer items-center justify-center gap-2 rounded-lg border-2 border-dashed border-zinc-300 px-4 py-8 text-center hover:border-indigo-500 hover:bg-indigo-50">
+            <Upload className="h-4 w-4 text-zinc-400" />
+            <span className="text-xs text-zinc-500">Click to upload photo</span>
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handlePhotoUpload}
+              className="hidden"
+            />
+          </label>
+        )}
       </section>
 
       <section>

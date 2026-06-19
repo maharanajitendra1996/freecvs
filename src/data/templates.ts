@@ -84,6 +84,7 @@ const allThemes = [...themes, ...EXTRA_THEMES];
 export const RESUME_TEMPLATES: ResumeTemplate[] = allThemes.map((t, i) => {
   const id = `template-${String(i + 1).padStart(3, "0")}`;
   const slug = slugify(t.name);
+  const supportsPhoto = ["sidebar-left", "sidebar-right", "header-banner"].includes(t.layout);
   return {
     id,
     name: t.name,
@@ -93,6 +94,7 @@ export const RESUME_TEMPLATES: ResumeTemplate[] = allThemes.map((t, i) => {
     description: `A ${CATEGORY_LABELS[t.category].toLowerCase()} resume template — ${t.name}. Free to use with unlimited PDF & DOC downloads.`,
     tags: t.tags,
     popular: t.popular,
+    supportsPhoto,
     theme: {
       primary: t.primary,
       secondary: t.secondary,

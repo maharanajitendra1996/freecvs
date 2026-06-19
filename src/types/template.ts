@@ -39,6 +39,7 @@ export interface ResumeTemplate {
   tags: string[];
   theme: TemplateTheme;
   popular?: boolean;
+  supportsPhoto?: boolean;
 }
 
 export const CATEGORY_LABELS: Record<TemplateCategory, string> = {
