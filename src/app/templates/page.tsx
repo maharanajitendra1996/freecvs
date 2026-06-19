@@ -48,9 +48,9 @@ export default function TemplatesPage() {
           <p className="mt-2 max-w-2xl text-sm text-zinc-600 sm:text-base">
             {TEMPLATE_COUNT} professionally designed, 100% free templates. Unlimited PDF & DOC downloads.
           </p>
-          <div id="import" className="mt-6 scroll-mt-28">
+          {/* <div id="import" className="mt-6 scroll-mt-28">
             <ResumeImport variant="card" />
-          </div>
+          </div> */}
           <div className="relative mt-5 max-w-full sm:max-w-md">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-400" />
             <input

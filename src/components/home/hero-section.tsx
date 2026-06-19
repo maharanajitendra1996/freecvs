@@ -24,15 +24,15 @@ export function HeroSection({ templateCount }: { templateCount: number }) {
             >
               Get started for free ✨
             </Link>
-            <Link
+            {/* <Link
               href="/templates#import"
               className="inline-flex w-full items-center justify-center gap-2 rounded-full border-2 border-[#1a122e]/20 bg-white px-8 py-3.5 text-base font-semibold text-[#1a122e] transition hover:bg-white/80 sm:w-auto"
             >
               Upload existing resume ↑
-            </Link>
+            </Link> */}
           </div>
           <p className="mt-6 text-sm text-zinc-500">
-            {templateCount} templates · Import PDF/DOCX · No sign-up
+            {templateCount} templates · Export to PDF · No sign-up
           </p>
         </div>
 

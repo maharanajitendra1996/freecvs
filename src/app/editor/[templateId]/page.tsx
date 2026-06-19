@@ -69,7 +69,7 @@ export default function EditorPage({ params }: { params: Promise<{ templateId: s
           <span className="shrink-0 rounded-full bg-green-100 px-2 py-0.5 text-[10px] font-medium text-green-800 sm:text-xs">Free</span>
         </div>
         <div className="flex flex-wrap items-center justify-end gap-2">
-          <ResumeImport templateId={template.id} variant="compact" />
+          {/* <ResumeImport templateId={template.id} variant="compact" /> */}
           {!useSampleData && (
             <button
               onClick={loadSampleData}
@@ -100,7 +100,7 @@ export default function EditorPage({ params }: { params: Promise<{ templateId: s
 
       <div className="flex flex-1 flex-col overflow-hidden lg:flex-row">
         <aside className="max-h-[45vh] w-full shrink-0 overflow-y-auto border-b border-zinc-200 bg-white p-4 sm:max-h-[50vh] lg:max-h-none lg:max-w-md lg:border-b-0 lg:border-r lg:p-6">
-          <ResumeImport templateId={template.id} variant="card" className="mb-5" />
+          {/* <ResumeImport templateId={template.id} variant="card" className="mb-5" /> */}
           <ResumeEditorForm data={data} onChange={setData} />
         </aside>
 
