@@ -6,6 +6,7 @@ import { Search } from "lucide-react";
 import { SiteShell } from "@/components/layout/site-shell";
 import { TemplateCard } from "@/components/templates/template-card";
 import { ResumeImport } from "@/components/resume/resume-import";
+import { SectionAd } from "@/components/ads/section-ad";
 import { RESUME_TEMPLATES, TEMPLATE_COUNT } from "@/data/templates";
 import {
   CATEGORY_LABELS,
@@ -64,6 +65,7 @@ export default function TemplatesPage() {
         </div>
       </div>
 
+      <SectionAd />
       <div className="sticky top-16 z-40 border-b border-zinc-200 bg-white/95 backdrop-blur-md lg:hidden">
         <div className="flex gap-2 overflow-x-auto px-4 py-3">
           <button

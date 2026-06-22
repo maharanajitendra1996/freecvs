@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SiteShell } from "@/components/layout/site-shell";
+import { SectionAd } from "@/components/ads/section-ad";
 import { TEMPLATE_COUNT } from "@/data/templates";
 
 export const metadata: Metadata = {
@@ -36,6 +37,7 @@ export default function AboutPage() {
           required. Whether you&apos;re a student, executive, or creative
           professional, we have an ATS-friendly template for you.
         </p>
+        <SectionAd />
       </article>
     </SiteShell>
   );

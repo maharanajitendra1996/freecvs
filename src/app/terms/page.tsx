@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SiteShell } from "@/components/layout/site-shell";
+import { SectionAd } from "@/components/ads/section-ad";
 
 export const metadata: Metadata = {
   title: "Terms of Service | FreeCVs",
@@ -25,6 +26,7 @@ export default function TermsPage() {
           You retain ownership of resume content you create. You are responsible
           for accuracy of information in your resumes.
         </p>
+        <SectionAd />
         <h2>Acceptable use</h2>
         <p>
           You may not use the service for illegal purposes, spam, or attempts to

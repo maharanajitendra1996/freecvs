@@ -11,4 +11,4 @@ Allow: /
 
 Crawl-delay: 1
 
-Sitemap: https://FreeCVs.com/sitemap.xml
+Sitemap: https://freecvs.in/sitemap.xml

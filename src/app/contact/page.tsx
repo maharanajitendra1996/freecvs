@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SiteShell } from "@/components/layout/site-shell";
+import { SectionAd } from "@/components/ads/section-ad";
 
 export const metadata: Metadata = {
   title: "Contact FreeCVs | Get Help with Your Resume",
@@ -32,6 +33,7 @@ export default function ContactPage() {
         <p className="mt-6 text-sm text-zinc-500">
           We typically respond within 2 business days.
         </p>
+        <SectionAd />
       </div>
     </SiteShell>
   );

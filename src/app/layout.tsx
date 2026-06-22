@@ -14,7 +14,7 @@ const lora = Lora({
   weight: ["400", "500", "600", "700"],
 });
 
-const siteUrl = "https://FreeCVs.com";
+const siteUrl = "https://freecvs.in";
 const logoUrl = `${siteUrl}/logo.png`;
 
 export const metadata: Metadata = {
@@ -108,7 +108,7 @@ export default function RootLayout({
     name: "FreeCVs",
     description:
       "Free resume builder and CV maker with 80+ professional templates",
-    url: "https://FreeCVs.com",
+    url: "https://freecvs.in",
     applicationCategory: "DesktopApplication",
     offers: {
       "@type": "Offer",
@@ -120,7 +120,7 @@ export default function RootLayout({
       ratingValue: "4.8",
       ratingCount: "2500",
     },
-    image: "https://FreeCVs.com/logo.png",
+    image: "https://freecvs.in/logo.png",
   };
 
   return (
@@ -141,21 +141,6 @@ var d = document,
     l = d.scripts[d.scripts.length - 1];
 s.settings = sntof || {};
 s.src = "\/\/tiny-ambition.com\/c.D\/9w6Abj2I5\/lmSDWuQa9RNtzGE\/2rMDTrQs3tMhyI0m3HMFTxY_xvNvDAcK3-";
-s.async = true;
-s.referrerPolicy = 'no-referrer-when-downgrade';
-l.parentNode.insertBefore(s, l);
-})({})`,
-          }}
-          strategy="afterInteractive"
-        />
-        <Script
-          dangerouslySetInnerHTML={{
-            __html: `(function(fgvbk){
-var d = document,
-    s = d.createElement('script'),
-    l = d.scripts[d.scripts.length - 1];
-s.settings = fgvbk || {};
-s.src = "\/\/massivesalad.com\/b-X_V.sydTGbla0\/Y\/WmcN\/Kekme9\/u\/ZqU\/lckjPFTlcexLNAjTEf0EOfT_cftZNAzzEW2\/MCTaU\/wVM\/Qu";
 s.async = true;
 s.referrerPolicy = 'no-referrer-when-downgrade';
 l.parentNode.insertBefore(s, l);

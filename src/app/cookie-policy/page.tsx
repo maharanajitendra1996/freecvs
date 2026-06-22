@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SiteShell } from "@/components/layout/site-shell";
+import { SectionAd } from "@/components/ads/section-ad";
 
 export const metadata: Metadata = {
   title: "Cookie Policy | FreeCVs",
@@ -17,6 +18,7 @@ export default function CookiePolicyPage() {
           FreeCVs uses browser local storage to save your editor draft. No
           login cookies are used.
         </p>
+        <SectionAd />
         <h2>Managing cookies</h2>
         <p>
           You can disable cookies in your browser settings. Some features may

@@ -4,6 +4,7 @@ import { SiteShell } from "@/components/layout/site-shell";
 import { HeroSection } from "@/components/home/hero-section";
 import { TemplateCard } from "@/components/templates/template-card";
 import { TestimonialsSection } from "@/components/home/testimonials-section";
+import { SectionAd } from "@/components/ads/section-ad";
 import { getPopularTemplates, TEMPLATE_COUNT } from "@/data/templates";
 import { CATEGORY_LABELS, type TemplateCategory } from "@/types/template";
 
@@ -94,6 +95,7 @@ export default function HomePage() {
   return (
     <SiteShell>
       <HeroSection templateCount={TEMPLATE_COUNT} />
+      <SectionAd />
 
       <section id="how-it-works" className="py-14 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -124,6 +126,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      <SectionAd />
       <section className="bg-[#f4f1ec]/60 py-14 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-center text-2xl font-bold sm:text-3xl">
@@ -144,6 +147,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      <SectionAd />
       <section className="py-14 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
@@ -170,7 +174,9 @@ export default function HomePage() {
         </div>
       </section>
 
+      <SectionAd />
       <TestimonialsSection />
+      <SectionAd />
 
       <section className="bg-white py-14 sm:py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">

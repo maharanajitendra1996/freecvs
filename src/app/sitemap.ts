@@ -15,7 +15,7 @@ const categories: TemplateCategory[] = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://FreeCVs.com";
+  const baseUrl = "https://freecvs.in";
   const lastModified = new Date();
 
   // Main pages

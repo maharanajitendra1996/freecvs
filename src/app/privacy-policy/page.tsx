@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SiteShell } from "@/components/layout/site-shell";
+import { SectionAd } from "@/components/ads/section-ad";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | FreeCVs",
@@ -35,6 +36,7 @@ export default function PrivacyPolicyPage() {
           We use your data to provide resume editing and unlimited downloads. We
           do not sell your personal information.
         </p>
+        <SectionAd />
         <h2>Cookies</h2>
         <p>
           We use browser local storage to save your resume draft. No advertising
