@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { SiteShell } from "@/components/layout/site-shell";
 
 export const metadata: Metadata = {
-  title: "Cookie Policy | ResumeForge",
+  title: "Cookie Policy | FreeCVs",
   description:
-    "ResumeForge cookie policy. Learn about cookies and tracking used on our free resume builder.",
+    "FreeCVs cookie policy. Learn about cookies and tracking used on our free resume builder.",
   robots: { index: false },
 };
 
@@ -14,7 +14,7 @@ export default function CookiePolicyPage() {
       <article className="prose prose-zinc mx-auto max-w-3xl px-4 py-12">
         <h1>Cookie Policy</h1>
         <p>
-          ResumeForge uses browser local storage to save your editor draft. No
+          FreeCVs uses browser local storage to save your editor draft. No
           login cookies are used.
         </p>
         <h2>Managing cookies</h2>

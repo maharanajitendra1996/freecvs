@@ -42,7 +42,7 @@ export function TestimonialsSection() {
             Loved by professionals worldwide
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-zinc-600">
-            Real stories from people who built their resume on ResumeForge and landed interviews faster.
+            Real stories from people who built their resume on FreeCVs and landed interviews faster.
           </p>
         </div>
 
@@ -85,7 +85,7 @@ export function TestimonialsSection() {
         </div>
 
         <p className="mt-10 text-center text-xs text-zinc-400">
-          Reviews from ResumeForge users · Updated May 2026
+          Reviews from FreeCVs users · Updated May 2026
         </p>
       </div>
     </section>

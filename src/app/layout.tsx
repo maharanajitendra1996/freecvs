@@ -13,16 +13,16 @@ const lora = Lora({
   weight: ["400", "500", "600", "700"],
 });
 
-const siteUrl = "https://resumeforge.com";
+const siteUrl = "https://FreeCVs.com";
 const logoUrl = `${siteUrl}/logo.png`;
 
 export const metadata: Metadata = {
   title: {
-    default: "Free Resume Builder & CV Maker | 80 Templates | ResumeForge",
-    template: "%s | ResumeForge",
+    default: "Free Resume Builder & CV Maker | 80 Templates | FreeCVs",
+    template: "%s | FreeCVs",
   },
   description:
-    "Create a professional resume or CV with ResumeForge's free resume builder. Choose from 80 free templates, no watermark, no sign-up required. Download as PDF or DOC instantly.",
+    "Create a professional resume or CV with FreeCVs's free resume builder. Choose from 80 free templates, no watermark, no sign-up required. Download as PDF or DOC instantly.",
   keywords: [
     "free resume",
     "free CV",
@@ -65,13 +65,13 @@ export const metadata: Metadata = {
       "Build your professional resume or CV for free with 80+ templates. No watermarks, unlimited downloads. Download as PDF or Word instantly.",
     type: "website",
     url: siteUrl,
-    siteName: "ResumeForge",
+    siteName: "FreeCVs",
     images: [
       {
         url: logoUrl,
         width: 1200,
         height: 630,
-        alt: "ResumeForge - Free Resume and CV Builder",
+        alt: "FreeCVs - Free Resume and CV Builder",
         type: "image/png",
       },
     ],
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Free Resume Builder & CV Maker | 80+ Templates",
     description:
-      "Create your professional resume or CV for free with ResumeForge. 80+ templates, no watermarks, unlimited downloads.",
+      "Create your professional resume or CV for free with FreeCVs. 80+ templates, no watermarks, unlimited downloads.",
     images: [logoUrl],
   },
   robots: {
@@ -104,10 +104,10 @@ export default function RootLayout({
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "ResumeForge",
+    name: "FreeCVs",
     description:
       "Free resume builder and CV maker with 80+ professional templates",
-    url: "https://resumeforge.com",
+    url: "https://FreeCVs.com",
     applicationCategory: "DesktopApplication",
     offers: {
       "@type": "Offer",
@@ -119,7 +119,7 @@ export default function RootLayout({
       ratingValue: "4.8",
       ratingCount: "2500",
     },
-    image: "https://resumeforge.com/logo.png",
+    image: "https://FreeCVs.com/logo.png",
   };
 
   return (

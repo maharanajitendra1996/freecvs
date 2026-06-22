@@ -15,7 +15,7 @@ const categories: TemplateCategory[] = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://resumeforge.com";
+  const baseUrl = "https://FreeCVs.com";
   const lastModified = new Date();
 
   // Main pages

@@ -67,7 +67,7 @@ const steps = [
 
 const faqs = [
   {
-    q: "Is ResumeForge really free?",
+    q: "Is FreeCVs really free?",
     a: `Yes. All ${TEMPLATE_COUNT} templates are free forever with unlimited PDF and DOC downloads. No hidden fees.`,
   },
   {
@@ -184,7 +184,7 @@ export default function HomePage() {
               essential to landing your dream job. Whether you're a fresh
               graduate, an experienced professional, an engineer, a nurse, or
               anyone seeking employment, creating a professional resume doesn't
-              have to be expensive or complicated. ResumeForge is the{" "}
+              have to be expensive or complicated. FreeCVs is the{" "}
               <strong>best free resume builder 2025</strong>, offering a
               completely free solution to help you create, edit, and download
               your resume or CV online without any watermarks or hidden fees.
@@ -210,7 +210,7 @@ export default function HomePage() {
               Templates for Every Career Path
             </h3>
             <p className="mt-3 leading-relaxed text-zinc-700">
-              ResumeForge specializes in creating templates for various
+              FreeCVs specializes in creating templates for various
               professions. We offer{" "}
               <strong>free resume builder for engineers</strong> with sections
               tailored for technical skills and projects,{" "}
@@ -230,7 +230,7 @@ export default function HomePage() {
             <p className="mt-3 leading-relaxed text-zinc-700">
               Wondering <strong>how to make free resume online</strong> or
               asking yourself <strong>where to make free CV</strong>?
-              ResumeForge makes it incredibly easy. Simply choose from our
+              FreeCVs makes it incredibly easy. Simply choose from our
               collection, customize your content, and download. You can also
               import existing resumes—just upload your PDF or Word document, and
               our intelligent system extracts your information automatically.
@@ -278,12 +278,12 @@ export default function HomePage() {
               Indian job market, and{" "}
               <strong>free resume format for Indian colleges</strong> suitable
               for entry-level candidates. No matter where you're located or what
-              stage of your career you're at, ResumeForge helps you create a
+              stage of your career you're at, FreeCVs helps you create a
               compelling resume.
             </p>
 
             <h3 className="mt-6 text-xl font-semibold text-zinc-900">
-              Why Choose ResumeForge?
+              Why Choose FreeCVs?
             </h3>
             <ul className="mt-3 space-y-2 text-zinc-700">
               <li>
@@ -318,7 +318,7 @@ export default function HomePage() {
 
             <p className="mt-6 leading-relaxed text-zinc-700">
               Stop worrying about expensive resume builders and complicated
-              software. With ResumeForge, you have access to all the tools you
+              software. With FreeCVs, you have access to all the tools you
               need to create a professional, ATS-friendly resume that gets
               results. Whether you're <strong>creating a free resume</strong>,
               building your <strong>free CV</strong>, or using our complete{" "}
@@ -328,7 +328,7 @@ export default function HomePage() {
 
             <p className="mt-4 leading-relaxed text-zinc-700">
               Start today and take the first step toward your next job
-              opportunity with ResumeForge—the free resume builder trusted by
+              opportunity with FreeCVs—the free resume builder trusted by
               job seekers worldwide.
             </p>
           </div>

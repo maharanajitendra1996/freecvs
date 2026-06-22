@@ -11,4 +11,4 @@ Allow: /
 
 Crawl-delay: 1
 
-Sitemap: https://resumeforge.com/sitemap.xml
+Sitemap: https://FreeCVs.com/sitemap.xml

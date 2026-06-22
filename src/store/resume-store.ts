@@ -27,6 +27,6 @@ export const useResumeStore = create<ResumeStore>()(
       loadSampleData: () => set({ data: sampleResumeData(), useSampleData: true }),
       resetData: () => set({ data: emptyResumeData(), useSampleData: false }),
     }),
-    { name: "resumeforge-draft" },
+    { name: "FreeCVs-draft" },
   ),
 );

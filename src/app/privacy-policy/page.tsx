@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { SiteShell } from "@/components/layout/site-shell";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | ResumeForge",
+  title: "Privacy Policy | FreeCVs",
   description:
-    "ResumeForge privacy policy. Learn how we protect your data when using our free resume builder.",
+    "FreeCVs privacy policy. Learn how we protect your data when using our free resume builder.",
   robots: { index: false },
 };
 
@@ -15,7 +15,7 @@ export default function PrivacyPolicyPage() {
         <h1>Privacy Policy</h1>
         <p className="text-sm text-zinc-500">Last updated: May 21, 2026</p>
         <p>
-          ResumeForge (&quot;we&quot;, &quot;our&quot;) respects your privacy.
+          FreeCVs (&quot;we&quot;, &quot;our&quot;) respects your privacy.
           This policy explains how we collect, use, and protect your information
           when you use our free resume builder.
         </p>

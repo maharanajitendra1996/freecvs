@@ -28,7 +28,7 @@ export function Footer() {
               <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-600 text-white">
                 <FileText className="h-4 w-4" />
               </span>
-              ResumeForge
+              FreeCVs
             </Link>
             <p className="mt-3 text-sm text-zinc-500">
               50 free professional resume templates. Unlimited PDF & DOC downloads. No watermarks.
@@ -50,7 +50,7 @@ export function Footer() {
           ))}
         </div>
         <div className="mt-10 border-t border-zinc-200 pt-6 text-center text-sm text-zinc-500">
-          © {new Date().getFullYear()} ResumeForge. All rights reserved. All templates are free forever.
+          © {new Date().getFullYear()} FreeCVs. All rights reserved. All templates are free forever.
         </div>
       </div>
     </footer>

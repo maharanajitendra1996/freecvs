@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { SiteShell } from "@/components/layout/site-shell";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | ResumeForge",
+  title: "Terms of Service | FreeCVs",
   description:
-    "Terms of service for ResumeForge. Read our conditions for using the free resume builder.",
+    "Terms of service for FreeCVs. Read our conditions for using the free resume builder.",
   robots: { index: false },
 };
 
@@ -14,7 +14,7 @@ export default function TermsPage() {
       <article className="prose prose-zinc mx-auto max-w-3xl px-4 py-12">
         <h1>Terms of Service</h1>
         <p className="text-sm text-zinc-500">Last updated: May 21, 2026</p>
-        <p>By using ResumeForge, you agree to these terms.</p>
+        <p>By using FreeCVs, you agree to these terms.</p>
         <h2>Free service</h2>
         <p>
           All 50 resume templates and unlimited PDF/DOC downloads are provided
@@ -32,7 +32,7 @@ export default function TermsPage() {
         </p>
         <h2>Disclaimer</h2>
         <p>
-          ResumeForge is provided &quot;as is&quot; without warranties. We are
+          FreeCVs is provided &quot;as is&quot; without warranties. We are
           not responsible for hiring outcomes resulting from use of our
           templates.
         </p>

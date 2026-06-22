@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "student resume template",
   ],
   openGraph: {
-    title: "80+ Free Resume Templates | ResumeForge",
+    title: "80+ Free Resume Templates | FreeCVs",
     description:
       "Discover professional resume templates for every industry and experience level. All completely free with unlimited downloads.",
     type: "website",

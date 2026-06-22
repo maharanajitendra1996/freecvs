@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { SiteShell } from "@/components/layout/site-shell";
 
 export const metadata: Metadata = {
-  title: "Contact ResumeForge | Get Help with Your Resume",
+  title: "Contact FreeCVs | Get Help with Your Resume",
   description:
-    "Get in touch with ResumeForge support. Have questions about our free resume builder? Contact us anytime.",
+    "Get in touch with FreeCVs support. Have questions about our free resume builder? Contact us anytime.",
   keywords: ["contact", "support", "help", "resume builder help"],
   openGraph: {
-    title: "Contact ResumeForge",
-    description: "Reach out to the ResumeForge team. We're here to help!",
+    title: "Contact FreeCVs",
+    description: "Reach out to the FreeCVs team. We're here to help!",
     type: "website",
   },
 };

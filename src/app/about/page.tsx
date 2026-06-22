@@ -3,19 +3,19 @@ import { SiteShell } from "@/components/layout/site-shell";
 import { TEMPLATE_COUNT } from "@/data/templates";
 
 export const metadata: Metadata = {
-  title: "About ResumeForge | Free Resume Builder Mission & Values",
+  title: "About FreeCVs | Free Resume Builder Mission & Values",
   description:
-    "Learn about ResumeForge, the free resume builder trusted by job seekers worldwide. Our mission is to provide free, professional resume and CV templates with unlimited downloads.",
+    "Learn about FreeCVs, the free resume builder trusted by job seekers worldwide. Our mission is to provide free, professional resume and CV templates with unlimited downloads.",
   keywords: [
-    "about ResumeForge",
+    "about FreeCVs",
     "free resume builder",
     "resume builder company",
     "our story",
   ],
   openGraph: {
-    title: "About ResumeForge | Free Resume Builder",
+    title: "About FreeCVs | Free Resume Builder",
     description:
-      "Discover the story behind ResumeForge, the leading free resume and CV builder with 80+ templates.",
+      "Discover the story behind FreeCVs, the leading free resume and CV builder with 80+ templates.",
     type: "website",
   },
 };
@@ -24,9 +24,9 @@ export default function AboutPage() {
   return (
     <SiteShell>
       <article className="mx-auto max-w-3xl px-4 py-12">
-        <h1 className="text-3xl font-bold">About ResumeForge</h1>
+        <h1 className="text-3xl font-bold">About FreeCVs</h1>
         <p className="mt-4 text-zinc-600 leading-relaxed">
-          ResumeForge is a free online resume builder inspired by the best
+          FreeCVs is a free online resume builder inspired by the best
           features of modern CV tools. We offer {TEMPLATE_COUNT} professional
           resume templates across 9 categories — all completely free with
           unlimited PDF and Word downloads and no watermarks.

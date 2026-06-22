@@ -1,4 +1,4 @@
-# ResumeForge — Free Resume Template Website
+# FreeCVs — Free Resume Template Website
 
 50 free resume templates, unlimited PDF & DOC downloads. **No sign-up required.**
 

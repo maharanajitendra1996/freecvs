@@ -27,7 +27,7 @@ export function Header() {
             <FileText className="h-4 w-4 sm:h-5 sm:w-5" />
           </span>
           <span className="text-base tracking-tight sm:text-lg">
-            Resume<span className="text-[#5b4d8c]">Forge</span>
+            Free<span className="text-[#5b4d8c]">CVs</span>
           </span>
         </Link>
 

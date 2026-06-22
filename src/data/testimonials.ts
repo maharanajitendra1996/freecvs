@@ -16,7 +16,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: "Product Manager",
     location: "Bangalore, India",
     quote:
-      "I had a recruiter callback within a week of sending my ResumeForge PDF. The Urban Modern template looked polished without feeling over-designed — exactly what I needed for tech PM roles.",
+      "I had a recruiter callback within a week of sending my FreeCVs PDF. The Urban Modern template looked polished without feeling over-designed — exactly what I needed for tech PM roles.",
     rating: 5,
     avatarColor: "#7c3aed",
     highlight: "Landed 3 interviews in 2 weeks",
@@ -68,7 +68,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: "Operations Lead",
     location: "Seoul, South Korea",
     quote:
-      "Our whole team used ResumeForge for internal role changes. Two-column layouts fit more experience on one page. Export to Word was a lifesaver for HR systems.",
+      "Our whole team used FreeCVs for internal role changes. Two-column layouts fit more experience on one page. Export to Word was a lifesaver for HR systems.",
     rating: 4,
     avatarColor: "#ea580c",
   },
