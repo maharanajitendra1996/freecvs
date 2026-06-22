@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FileText, Menu, X } from "lucide-react";
+import Image from "next/image";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import clsx from "clsx";
 
@@ -23,9 +24,13 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-zinc-200/80 bg-white/95 backdrop-blur-md">
       <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4 sm:h-16 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2 font-semibold text-zinc-900">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#1a122e] text-white sm:h-9 sm:w-9">
-            <FileText className="h-4 w-4 sm:h-5 sm:w-5" />
-          </span>
+          <Image
+            src="/logo.png"
+            alt="FreeCVs Logo"
+            width={40}
+            height={40}
+            className="sm:h-10 sm:w-10"
+          />
           <span className="text-base tracking-tight sm:text-lg">
             Free<span className="text-[#5b4d8c]">CVs</span>
           </span>
