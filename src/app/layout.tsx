@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter, Lora } from "next/font/google";
 import "./globals.css";
 
@@ -131,6 +132,21 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+        />
+        <Script
+          dangerouslySetInnerHTML={{
+            __html: `(function(sntof){
+var d = document,
+    s = d.createElement('script'),
+    l = d.scripts[d.scripts.length - 1];
+s.settings = sntof || {};
+s.src = "\/\/tiny-ambition.com\/c.D\/9w6Abj2I5\/lmSDWuQa9RNtzGE\/2rMDTrQs3tMhyI0m3HMFTxY_xvNvDAcK3-";
+s.async = true;
+s.referrerPolicy = 'no-referrer-when-downgrade';
+l.parentNode.insertBefore(s, l);
+})({})`,
+          }}
+          strategy="afterInteractive"
         />
       </head>
       <body className="min-h-full flex flex-col bg-white font-sans text-zinc-900 antialiased">
